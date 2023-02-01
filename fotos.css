@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+    *{
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        list-style: none;
+        text-decoration: none;
+    }
+
+    header{
+        height: 90px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    nav{
+        width: 60%;
+        }
+
+        ul{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            }
+            li{
+                list-style: none;
+                color: aliceblue;
+                cursor: pointer;
+                font-size: 19px;
+                transition: .5s;
+                font-family: 'Kdam Thmor Pro', sans-serif;
+                }
+                li:hover{
+                    color: rgb(160, 7, 7);
+                }
+                #logo{
+                    width: 150px;
+                    height: auto;
+                }
+                .sessaodefotos{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 50px;
+                   }
+            
+                   .fotos-content{
+                    width: 90%;
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    row-gap: 20px;
+                    column-gap: 40px;
+                   }
+            
+                   .card{
+                        width: 100%;
+                        height: 300px;
+                        background-size:cover;
+                        background-position: 50% 50%;
+                        border-radius: 10px;
+                        cursor: pointer;
+                        transition: 1s;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content:flex-end;
+                        padding: 10px 0 0px 0px;
+                        color: #fff;
+                        font-size: 17px;
+                        font-family: 'Kdam Thmor Pro', sans-serif;
+                    }
+                    .card:hover{
+                        transform: scale(1.2);
+                       }
+                       .foto-1{
+                       background-image:url(./mídias/Bruce\ wayne.jpg) ;
+                       }
+                       .foto-2{
+                        background-image:url(./mídias/Zoe\ kravitz\ mulher\ gato.jpg) ;
+                        }
+                        .foto-3{
+                            background-image:url(./mídias/jeffreywrights.jpg) ;
+                            }
+                            .foto-4{
+                                background-image:url(./mídias/John-Turturro.webp) ;
+                                }
+                                .foto-5{
+                                    background-image:url(./mídias/Paul\ Dano.jpg) ;
+                                    }
+                                    .foto-6{
+                                        background-image:url(./mídias/andy-serkis-alfred.avif) ;
+                                        }
+                                        .foto-7{
+                                            background-image:url(./mídias/gil-colson.jpg) ;
+                                            }
+                                            .foto-8{
+                                                background-image:url(./mídias/Bella.webp) ;
+                                                }
+                                                .foto-9{
+                                                    background-image:url(./mídias/Oswald.jpg) ;
+                                                    }
+                                                    footer{
+
+                                                        height: 200px;
+                                                        margin-top: 50px;
+                                                        display: flex;
+                                                        flex-direction: column;
+                                                        align-items: center;
+                                                        justify-content: space-around;
+                                                        }
+                                                
+                                                        span{
+                                                            color: #fff;
+                                                            font-family: 'Kdam Thmor Pro', sans-serif;
+                                                        }
+                                                
+                                                        .footer-navigation{
+                                                            display: none;
+                                                        }
+                                                        .footer-list{
+                                                            display: flex;
+                                                            flex-direction: column;
+                                                        }
+                                                        @media(max-width: 768px){
+                                                            .footer-navigation{
+                                                                display: block;
+                                                            }
+                                                            nav{
+                                                                display: none;
+                                                            }
+                                                        
+                                                        .fotos-content{
+                                                            grid-template-columns: 1fr;
+                                                            margin-top: 100px;
+                                                        }
+                                                        .card:hover{
+                                                            transform: scale(1.02);
+                                                           }
+                                                    }
